@@ -5,7 +5,7 @@ function App() {
     return (
         <div>
             <div>
-                <Button secondary rounded outline>
+                <Button primary outline className="mb-4">
                     <GoBell />
                     Click here
                 </Button>
@@ -17,7 +17,7 @@ function App() {
                 </Button>
             </div>
             <div>
-                <Button warning>
+                <Button outline warning>
                     <GoDatabase />
                     See Deal
                 </Button>
@@ -28,7 +28,7 @@ function App() {
                 </Button>
             </div>
             <div>
-                <Button primary rounded>
+                <Button danger rounded outline>
                     Someting
                 </Button>
             </div>
