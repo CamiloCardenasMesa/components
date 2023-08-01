@@ -14,6 +14,11 @@ function App() {
                 </Button>
             </div>
             <div>
+                <Button warning>
+                    See Deal
+                </Button>
+            </div>
+            <div>
                 <Button secondary outline>
                     Hi there
                 </Button>
