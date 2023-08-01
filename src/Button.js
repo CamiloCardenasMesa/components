@@ -18,7 +18,6 @@ Button.propTypes = {
         const count =
         Number(!!primary) +
         Number(!!secondary) +
-        Number(!!secondary) +
         Number(!!warning) +
         Number(!!success) +
         Number(!!danger);
