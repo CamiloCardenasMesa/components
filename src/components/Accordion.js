@@ -1,3 +1,4 @@
+import { GoMoveToBottom, GoMoveToStart } from "react-icons/go";
 import { useState} from "react";
 
 function Accordion({ items }) {
@@ -10,9 +11,16 @@ function Accordion({ items }) {
     const renderItems = items.map((item, index) => {
         const isExpanded = index === expandedItems;
 
+        const icon = <span>
+            {isExpanded ? <GoMoveToBottom /> : <GoMoveToStart />}
+        </span>
+
         return (
             <div key={item.id}>
-                <div onClick={() => handleClick(index)}>{item.label}</div>
+                <div onClick={() => handleClick(index)}>
+                    {icon}
+                    {item.label}
+                </div>
                 {isExpanded && <div>{item.content}</div>}
             </div>
         );
