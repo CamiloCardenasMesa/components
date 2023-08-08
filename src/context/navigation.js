@@ -22,12 +22,7 @@ const NavigationContext = createContext();
     };
 
     return (
-        <NavigationContext.Provider value={{  }}>
-            <div>
-                <button onClick={() => navigate('/accordion')}>Go to Dropdown</button>
-                <button onClick={() => navigate('/dropdown')}>Go to Accordion</button>
-            </div>
-            {currentPath}
+        <NavigationContext.Provider value={{ currentPath, navigate }}>
             {children}
         </NavigationContext.Provider>
     ); 
