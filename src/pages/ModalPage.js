@@ -26,7 +26,7 @@ function ModalPage() {
     </Modal>
 
     return (
-        <div className="relative">
+        <div>
             <Button onClick={handleClick} primary>Open Modal</Button>
             { showModal && modal }
             <p>
