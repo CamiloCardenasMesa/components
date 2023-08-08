@@ -8,12 +8,12 @@ function Sidebar() {
     ];
 
     const renderedLinks = links.map((link) => {
-        return <Link className="mb-3" key={link.label} to={link.path}>{link.label}</Link>
+        return <Link className="mb-3" activeClassName="font-bold border-l-4 border-blue-500 pl-2" key={link.label} to={link.path}>{link.label}</Link>
     });
 
 
     return (
-        <div className="sticky top-0 overflow-y-scroll flex flex-col">
+        <div className=" flex flex-col sticky top-0 overflow-x-y-scroll items-start">
             {renderedLinks}
         </div>
     );
