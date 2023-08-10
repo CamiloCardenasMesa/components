@@ -9,9 +9,18 @@ function TablePage() {
     ];
 
     const config = [
-        { label: 'name' },
-        { label: 'color' },
-        { label: 'score' },
+        { 
+            label: 'Name',
+            render: (fruit) => fruit.name
+        },
+        { 
+            label: 'Color',
+            render: (fruit) => fruit.color,
+        },
+        { 
+            label: 'Score',
+            render: (fruit) => fruit.score
+        },
     ];
 
     return (
