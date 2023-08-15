@@ -95,3 +95,6 @@ function CounterPage({ initialCount }) {
 }
  
 export default CounterPage;
+
+// redux: library to make handling state easier
+// Redux toolkit (RTK): library to make working with Redux easier
